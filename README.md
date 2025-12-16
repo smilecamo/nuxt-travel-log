@@ -1,6 +1,5 @@
 # Nuxt Minimal Starter
 
-
 ## Setup
 
 Make sure to install dependencies:

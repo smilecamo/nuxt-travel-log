@@ -1,7 +1,7 @@
 {
   "name": "nuxt-travel-log",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.7.1",
+    "eslint-plugin-format": "^1.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7"
   },
