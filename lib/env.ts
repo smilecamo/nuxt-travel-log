@@ -4,6 +4,8 @@ import tryParseEnv from "./try-parse-env";
 
 const EnvSchema = z.object({
   NODE_ENV: z.string(),
+  TURSO_DATABASE_URL: z.string(),
+  TURSO_AUTH_TOKEN: z.string(),
 });
 
 // 类型推断 (Static Type Inference)

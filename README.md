@@ -1,43 +1,11 @@
 # Nuxt Minimal Starter
 
-## Setup
+## 相关文档链接
 
-Make sure to install dependencies:
-
-```bash
-
-# pnpm
-pnpm install
-
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# pnpm
-pnpm dev
-
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-
-# pnpm
-pnpm build
-
-```
-
-Locally preview production build:
-
-```bash
-
-# pnpm
-pnpm preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+https://docs.turso.tech/local-development#turso-cli
+https://orm.drizzle.team/docs/drizzle-kit-studio
+https://zod.dev/basics#inferring-types
+https://icones.js.org/collection/tabler?s=moon&icon=tabler:moon-filled
+https://color-mode.nuxtjs.org/advanced/migration#_4-removed-hid-option
+https://tailwindcss.com/docs/installation/framework-guides/nuxt
+https://github.com/open-cli-tools/concurrently
