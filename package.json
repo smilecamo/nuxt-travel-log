@@ -4,29 +4,40 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "concurrently \"pnpm dev:db\" \"pnpm dev:nuxt\"",
+    "dev:nuxt": "nuxt dev --host 0.0.0.0",
+    "dev:db": "turso dev --db-file local.db",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "prepare": "husky",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "db:gen": "drizzle-kit generate",
+    "db:mig": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@libsql/client": "^0.15.15",
     "@nuxt/eslint": "1.12.1",
     "@nuxtjs/color-mode": "4.0.0",
     "@tailwindcss/vite": "^4.1.18",
+    "drizzle-orm": "^0.45.1",
     "eslint": "^9.39.2",
     "nuxt": "^3.20.2",
     "tailwindcss": "^4.1.18",
     "vue": "^3.5.25",
-    "vue-router": "^4.6.4"
+    "vue-router": "^4.6.4",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.7.1",
     "@iconify-json/tabler": "^1.2.24",
     "@nuxt/icon": "1.14.0",
+    "@types/node": "^25.0.3",
     "daisyui": "^5.5.14",
+    "drizzle-kit": "^0.31.8",
     "eslint-plugin-format": "^1.1.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7"
