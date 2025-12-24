@@ -8,9 +8,7 @@
           excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
           id nisi.
         </p>
-        <button class="btn btn-accent">
-          Sign In github <Icon name="tabler:brand-github" />
-        </button>
+        <AuthButton />
       </div>
     </div>
   </div>
